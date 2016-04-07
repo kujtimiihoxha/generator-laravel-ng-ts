@@ -1,12 +1,15 @@
 {
   "name": "generator-laravel-ng-ts",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Laravel Angular Typescript generator",
-  "homepage": "",
+  "homepage": "https://github.com/kujtimiihoxha/generator-laravel-ng-ts",
   "author": {
     "name": "Kujtim Hoxha",
     "email": "kujtimii.h@gmail.com",
     "url": "kujtimhoxha.com"
+  },
+  "bugs":{
+    "url" : "https://github.com/kujtimiihoxha/generator-laravel-ng-ts/issues"
   },
   "files": [
     "generators"

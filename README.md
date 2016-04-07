@@ -1,4 +1,4 @@
-# generator-laravel-ng-ts [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# generator-laravel-ng-ts [![NPM version][npm-image]][npm-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > Laravel Angular Typescript generator
 
 ## Installation
@@ -13,15 +13,70 @@ npm install -g generator-laravel-ng-ts
 Then generate your new project:
 
 ```bash
+mkdir my-project
+cd my-project
 yo laravel-ng-ts
 ```
 
-## Getting To Know Yeoman
+## Create Components
+```
+yo laravel-ng-ts:component [component-name]
+```
+- component-name : Can be ```camelCase``` or ```kebab-case```
 
- * Yeoman has a heart of gold.
- * Yeoman is a person with feelings and opinions, but is very easy to work with.
- * Yeoman can be too opinionated at times but is easily convinced not to be.
- * Feel free to [learn more about Yeoman](http://yeoman.io/).
+Example:
+```
+yo laravel-ng-ts my-custom-component
+```
+
+will create the following folders/files
+```
+client/
+    |- app/
+    |   |- components/
+    |   |   |- my-custom-component/                         --> component folder
+    |   |   |   |- my-custom-component.template.html        --> component html template
+    |   |   |   |- my-custom-component.component.ts         --> component configuration and controller 
+    |   |   |   |- my-custom-component.scss                 --> component style
+```
+
+## Create Routes
+```
+yo laravel-ng-ts:route [state] [route-url] [route-name] [path](optional)
+```
+- state : the route state ex. ```public.home```
+- route-url: the browser url  ex. ```/home```
+- route-name: the name of the route ex. ```home```
+- path: the path in which the route files will be stored ex. ```layout-public/``` this will 
+tell the generator to save the files under ```client/app/routes/layout-public/[route-name]```, by default all routes 
+will be saved under ```client/app/routes/[route-name]```
+
+Example:
+
+```
+yo laravel-ng-ts:route  public.home /home home /layout-public/
+```
+will create the following folders/files
+
+```
+client/
+    |- app/
+    |   |- routes/
+    |   |   |- layout-public/
+    |   |   |   |- home/                        -->route folder
+    |   |   |   |   |- home.route.ts            -->route configuration
+    |   |   |   |   |- home.template.html       -->route html template
+```
+## TODO
+- Add options to create other features
+    - Config
+    - Run
+    - Service
+    - Directive
+    - Model
+    - Resource
+ 
+
 
 ## License
 

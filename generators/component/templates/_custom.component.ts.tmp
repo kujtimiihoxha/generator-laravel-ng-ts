@@ -1,0 +1,13 @@
+module App.Components.<%= componentName %> {
+    @Component({
+            selector: "<%= dashedComponentName %>",
+            templateUrl: "./views/components/<%= dashedComponentName %>/<%= dashedComponentName %>.template.html"
+        }
+    )
+    @Inject("$log")
+    class <%= componentName %>Component {
+        constructor($log: ng.ILogService) {
+            $log.info("Hello from <%= componentName %> component.");
+        }
+    }
+}

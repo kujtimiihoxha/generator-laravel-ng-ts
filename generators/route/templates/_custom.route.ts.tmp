@@ -1,0 +1,17 @@
+module App.Routes.<%= fullPathName %><%= name %> {
+    import AccessLevels = App.Core.Constants.AccessLevels;
+    @RouteConfig("<%= state %>", {
+            url: "<%= url %>",
+            data: {
+                access: AccessLevels.public
+            },
+            templateUrl: "./views/routes/<%= rotePath %>/<%= roteName %>.template.html"
+        }
+    )
+    @Inject("$log")
+    class <%= name %> {
+        constructor($log: ng.ILogService) {
+            $log.info("You have reached '<%= state %>'.");
+        }
+    }
+}

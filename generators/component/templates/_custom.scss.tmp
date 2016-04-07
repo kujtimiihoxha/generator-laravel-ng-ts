@@ -1,0 +1,3 @@
+<%= dashedComponentName %>{
+//Put your component specific css here.
+}

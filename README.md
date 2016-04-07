@@ -1,5 +1,5 @@
 # generator-laravel-ng-ts [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> Yo generator to scaffold Laravel-Angular-Typescript apps.
+> Laravel Angular Typescript generator
 
 ## Installation
 

@@ -1,8 +1,8 @@
 {
   "name": "generator-laravel-ng-ts",
   "version": "0.0.0",
-  "description": "Yo generator to scaffold Laravel-Angular-Typescript apps.",
-  "homepage": "laravel-ng-ts.kutjimhoxha.com",
+  "description": "Laravel Angular Typescript generator",
+  "homepage": "",
   "author": {
     "name": "Kujtim Hoxha",
     "email": "kujtimii.h@gmail.com",
@@ -13,14 +13,18 @@
   ],
   "main": "generators\\index.js",
   "keywords": [
-    "laravel",
-    "angular",
-    "typescript",
+    "Laravel",
+    "Angular",
+    "Typescript",
     "yeoman-generator"
   ],
   "dependencies": {
-    "yeoman-generator": "^0.22.0",
     "chalk": "^1.0.0",
+    "fs-extra": "^0.26.7",
+    "junk": "^1.0.2",
+    "passthru": "^0.4.0",
+    "shelljs": "^0.6.0",
+    "yeoman-generator": "^0.22.0",
     "yosay": "^1.0.2"
   },
   "devDependencies": {
@@ -43,7 +47,7 @@
       "mocha": true
     }
   },
-  "repository": "kujtimiihoxha/generator-laravel-ng-ts",
+  "repository": "https://github.com/kujtimiihoxha/generator-laravel-ng-ts.git",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"

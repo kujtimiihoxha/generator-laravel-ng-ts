@@ -1,0 +1,23 @@
+///<reference path="../core/resource/base.resource.ts"/>
+module App.Resources {
+    import IBaseResource = App.Core.Resources.IBaseResource;
+    import BaseResource = App.Core.Resources.BaseResource;
+    export interface I<%= resourceName %>Resource extends IBaseResource{
+        //resource specific stuff
+        exampleResourceCall():any;
+    }
+    @Service({
+        serviceName: "App.Resources.<%= resourceName %>Resource"
+    })
+    @Inject("App.Core.Services.ApiService")
+    class <%= resourceName %>Resource extends BaseResource implements I<%= resourceName %>Resource{
+        constructor(apiService: restangular.IService){
+            super(apiService,'<%= resourceNamePlural %>')
+        }
+        //This is an example on how you can add extra resource calls besides the base resource calls
+        //This method will send a get request to /api/<%= resourceNamePlural %>/example with no extra parameters
+        exampleResourceCall():any {
+            return this.apiService.all(this.route).getList('example').get('');
+        }
+    }
+}

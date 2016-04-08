@@ -1,0 +1,15 @@
+module App.Constants {
+    @Constant({
+        constantName:"App.Constants.<%= constantName %>Constant"
+    })
+    class<%= constantName %>Constant{
+        hello:string = "Hello";
+        constructor(){
+            console.log("Hi from <%= constantName %> constant")
+        }
+        //Do not remove.
+        static constant(){
+            return new TestConstant();
+        }
+    }
+}

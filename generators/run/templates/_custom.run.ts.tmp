@@ -1,0 +1,10 @@
+module App.Runs {
+    "use strict";
+    class  <%= runName %>Run  {
+        @Run()
+        private static run() {
+        //Add your run configurations here.
+            console.log("Hello from <%= runName %> run");
+        }
+    }
+}

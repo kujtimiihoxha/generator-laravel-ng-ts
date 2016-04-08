@@ -1,0 +1,14 @@
+module App.Services{
+    export interface I<%= serviceName %>Interface{
+        // Add your custom fields and functions here.
+    }
+    @Service({
+        serviceName:"App.Service.<%= serviceName %>Service"
+    })
+    @Inject("$log")
+    class <%= serviceName %>Service implements I<%= serviceName %>Interface {
+        constructor($log: ng.ILogService){
+            $log.info("Hello from <%= serviceName %> service");
+        }
+    }
+}

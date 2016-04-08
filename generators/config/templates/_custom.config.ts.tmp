@@ -1,0 +1,10 @@
+module App.Configs {
+    "use strict";
+    class  <%= configName %>Config  {
+        @Config()
+        private static config() {
+        //Add your configurations here.
+            console.log("Hello from <%= configName %> config");
+        }
+    }
+}

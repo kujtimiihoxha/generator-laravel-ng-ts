@@ -1,0 +1,12 @@
+module App.Tests {
+    class <%= testName %>Test {
+        @Describe({
+            name: "Test for  <%= testName %>"
+        })
+        static tests(deps: any) {
+            it("Should do something", () => {
+                expect("Angular").toBe("Angular");
+            });
+        }
+    }
+}

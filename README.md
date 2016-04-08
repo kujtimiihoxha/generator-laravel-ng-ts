@@ -9,12 +9,47 @@ First, install [Yeoman](http://yeoman.io) and generator-laravel-ng-ts using [npm
 npm install -g yo
 npm install -g generator-laravel-ng-ts
 ```
-Then generate your new project:
-
+## Installation
+``` bash
+npm install -g yo
+npm install -g generator-laravel-ng-ts
+ ```
+## Create the project 
 ```bash
 mkdir my-project
 cd my-project
 yo laravel-ng-ts
+```
+## Prepare the app
+Change the ```.env``` file and add your database credentials.
+Run: 
+```
+php artisan migrate
+php artisan db:seed
+```
+
+## Running the app
+Open two terminal windows and navigate to the folder where you 
+project is saved , than in one terminal window run:
+```bash
+gulp && gulp watch
+```
+and the other : 
+```bash
+php artisan serve
+```
+
+after both tasks are running go to 
+```
+http://localhost:8000
+```
+
+login to dashboard 
+```
+go to  http://localhost:8000/#/auth/login
+
+email: abc@gmail.com
+pass: abc@12345
 ```
 ##Generators
 - ```laravel-ng-ts:component``` - create Angular 1.5 components

@@ -9,11 +9,6 @@ First, install [Yeoman](http://yeoman.io) and generator-laravel-ng-ts using [npm
 npm install -g yo
 npm install -g generator-laravel-ng-ts
 ```
-## Installation
-``` bash
-npm install -g yo
-npm install -g generator-laravel-ng-ts
- ```
 ## Create the project 
 ```bash
 mkdir my-project

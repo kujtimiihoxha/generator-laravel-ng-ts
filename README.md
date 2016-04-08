@@ -52,6 +52,7 @@ email: abc@gmail.com
 pass: abc@12345
 ```
 ##Generators
+
 - ```laravel-ng-ts:component``` - create Angular 1.5 components
 - ```laravel-ng-ts:config```    - create config functions
 - ```laravel-ng-ts:constant```  - create constants
@@ -60,7 +61,8 @@ pass: abc@12345
 - ```laravel-ng-ts:run```       - create run function
 - ```laravel-ng-ts:service```   - create service
 - ```laravel-ng-ts:describe```  - create unit test
-## Create Components
+
+## Generate Components
 ```
 yo laravel-ng-ts:component [component-name]
 ```
@@ -98,7 +100,7 @@ module App.Components.Example {
     }
 }
 ```
-## Create Routes
+## Generate Routes
 ```
 yo laravel-ng-ts:route [state] [route-url] [route-name] [path](optional)
 ```
@@ -145,7 +147,7 @@ module App.Routes.LayoutPublic.Home {
     }
 }
 ```
-## Create Model & Resource
+## Generate Model & Resource
 The model and resource generator makes it easy to create models and the corresponding resource classes
 this two classes make it very easy to communicate to the api of the backend app.
 ```
@@ -219,7 +221,7 @@ module App.Resources {
     }
 }
 ```
-## Create Services
+## Generate Services
 ```
 yo laravel-ng-ts:service [service-name]
 ```
@@ -254,7 +256,7 @@ module App.Services{
 }
 ```
 Similar to the service generator you can generate the other files.
-## Creating tests 
+## Generate tests 
 To create tests use 
 ```
 yo laravel-ng-ts:describe [test-name]

@@ -1,6 +1,8 @@
 # generator-laravel-ng-ts [![NPM version][npm-image]][npm-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > Laravel 5.2  Angular 1.5 Typescript generator
 
+## Pre requirements
+This generator assumes that you have PHP, and Composer install on your system.
 ## Installation
 
 First, install [Yeoman](http://yeoman.io) and generator-laravel-ng-ts using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
